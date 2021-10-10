@@ -1,0 +1,79 @@
+<ul ngbNav #nav="ngbNav" [(activeId)]="active" class="tcb-pills">
+  <li [ngbNavItem]="1" class="">
+    <a class="tcb-link" ngbNavLink>Chính quy</a>
+    <ng-template ngbNavContent>
+      <app-step class="scroll-element"></app-step>
+    </ng-template>
+  </li>
+  <li [ngbNavItem]="2">
+    <a ngbNavLink class="tcb-link">Khoá học</a>
+    <ng-template ngbNavContent>
+      <div class="media mt-4 mb-3">
+        <div class="bg-xam icon-shape rounded-circle shadow">
+          <img class="" src="assets/img/icons/new/1.svg" alt="Generic placeholder image">
+        </div>
+        <div class="media-body">
+          <h5 class="mt-0 mb-0">Lập trình Backend<span class="bg-h5 badge badge-pill badge-info p-2 ml-2">Middle</span></h5>
+          <span>Java, Spring Boot, MariaDB</span>
+        </div>
+      </div>
+      <div class="media mt-3">
+        <div class="bg-xam icon-shape rounded-circle shadow">
+          <img class="" src="assets/img/icons/new/1.svg" alt="Generic placeholder image">
+        </div>
+        <div class="media-body">
+          <h5 class="mt-0 mb-0">Lập trình Web<span class="bg-h5 badge badge-pill p-2 badge-warning ml-2">Junior</span></h5>
+          <span>HTLM, CSS, React, Javascript</span>
+        </div>
+      </div>
+    </ng-template>
+  </li>
+  <li [ngbNavItem]="3">
+    <a ngbNavLink class="tcb-link">Chứng chỉ</a>
+    <ng-template ngbNavContent>
+      <div class="media mt-4 mb-3">
+        <div class="bg-xam icon-shape rounded-circle shadow">
+          <img class="" src="assets/img/icons/new/1.svg" alt="Generic placeholder image">
+        </div>
+        <div class="media-body">
+          <h5 class="mt-0 mb-0">Lập trình Backend<span class="bg-h5 badge badge-pill p-1">Middle</span></h5>
+          <span>Java, Spring Boot, MariaDB</span>
+        </div>
+      </div>
+      <div class="media mt-3">
+        <div class="bg-xam icon-shape rounded-circle shadow">
+          <img class="" src="assets/img/icons/new/1.svg" alt="Generic placeholder image">
+        </div>
+        <div class="media-body">
+          <h5 class="mt-0 mb-0">Lập trình Web<span class="bg-h5 badge badge-pill p-2">Junior</span></h5>
+          <span>HTLM, CSS, React, Javascript</span>
+        </div>
+      </div>
+    </ng-template>
+  </li>
+  <li [ngbNavItem]="4">
+    <a ngbNavLink class="tcb-link">Ngoại ngữ</a>
+    <ng-template ngbNavContent>
+      <div class="media mt-4 mb-3">
+        <div class="bg-xam icon-shape rounded-circle shadow">
+          <img class="" src="assets/img/icons/new/1.svg" alt="Generic placeholder image">
+        </div>
+        <div class="media-body">
+          <h5 class="mt-0 mb-0">Lập trình Backend<span class="bg-h5 badge badge-pill p-1">Middle</span></h5>
+          <span>Java, Spring Boot, MariaDB</span>
+        </div>
+      </div>
+      <div class="media mt-3">
+        <div class="bg-xam icon-shape rounded-circle shadow">
+          <img class="" src="assets/img/icons/new/1.svg" alt="Generic placeholder image">
+        </div>
+        <div class="media-body">
+          <h5 class="mt-0 mb-0">Lập trình Web<span class="bg-h5 badge badge-pill p-2">Junior</span></h5>
+          <span>HTLM, CSS, React, Javascript</span>
+        </div>
+      </div>
+    </ng-template>
+  </li>
+</ul>
+
+<div [ngbNavOutlet]="nav" class="mt-2"></div>

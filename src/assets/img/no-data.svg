@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="201.667" height="220" viewBox="0 0 201.667 220">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_9814" data-name="Rectangle 9814" width="201.667" height="220" transform="translate(1386.386 667)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.498" y1="0.211" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#bec3dc" stop-opacity="0"/>
+      <stop offset="1" stop-color="#e6ebf3"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.768" y2="0.804" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0000f1"/>
+      <stop offset="0" stop-color="#0000f1" stop-opacity="0.996"/>
+      <stop offset="1" stop-color="#525278" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="Mask_Group_1262" data-name="Mask Group 1262" transform="translate(-1386.386 -667)" clip-path="url(#clip-path)">
+    <g id="Group_18284" data-name="Group 18284" transform="translate(968.775 401.961)">
+      <path id="Union_2" data-name="Union 2" d="M8.849,35.522a2.6,2.6,0,0,1-1-.586L1.2,28.72a2.619,2.619,0,0,1-1.11-1.572A2.646,2.646,0,0,1,.02,26.134V16.89a2.615,2.615,0,1,1,5.23,0v8.44l3.575,3.345L8.74,3.936a3.923,3.923,0,0,1,7.846,0l-.092,14.426L18.958,14.7V5.8a2.615,2.615,0,0,1,5.23,0v9.641a2.6,2.6,0,0,1-.339,1.289,2.642,2.642,0,0,1-.234.428l-5.362,7.98a2.608,2.608,0,0,1-1.81,1.132l-.1,15.225L8.88,44.218Z" transform="translate(437.276 367.601)" fill="#e4e6ef"/>
+      <path id="Union_3" data-name="Union 3" d="M2.317,10.694l.026-6.553-.946.88V7.565a.69.69,0,0,1-1.381,0V5a.7.7,0,0,1,.008-.1.7.7,0,0,1,.2-.7L2.073,2.47a.7.7,0,0,1,.274-.158L2.356,0l1.97.724.026,4.054a.682.682,0,0,1,.464.293L6.249,7.2a.681.681,0,0,1,.1.547v3.073a.69.69,0,0,1-1.381,0V7.738l-.6-.887L4.39,10.7a1.036,1.036,0,0,1-2.071,0Z" transform="translate(572.972 412.703) rotate(180)" fill="#e4e6ef"/>
+      <path id="Union_4" data-name="Union 4" d="M4.6,20.971,4.646,8.12,2.773,9.846v4.975a1.37,1.37,0,0,1-2.74,0v-5A1.381,1.381,0,0,1,.051,9.6,1.367,1.367,0,0,1,.443,8.224L4.117,4.841a1.393,1.393,0,0,1,.544-.311L4.675,0,8.585,1.42l.051,7.948a1.357,1.357,0,0,1,.92.576L12.4,14.111a1.324,1.324,0,0,1,.19,1.072v6.013a1.37,1.37,0,0,1-2.74,0V15.178L8.66,13.434l.049,7.537a2.055,2.055,0,1,1-4.11,0Z" transform="translate(583.418 416.046) rotate(180)" fill="#e4e6ef"/>
+      <path id="Path_55439" data-name="Path 55439" d="M189.331,9.541S146.946,36.05,94.665,36.05,0,9.541,0,9.541,11.928,3.114,29.777,1.285C83.116-4.179,189.331,9.541,189.331,9.541Z" transform="translate(606.826 439.889) rotate(-177.993)" fill="url(#linear-gradient)"/>
+      <path id="Path_55436" data-name="Path 55436" d="M42.71,0,83.422,3.443s-.8,27.639-.7,49.782S88.6,58.584,55.826,77.117,0,86.644,0,86.644Z" transform="translate(504.027 328.497) rotate(22)" opacity="0.22" fill="url(#linear-gradient-2)"/>
+      <path id="Path_55437" data-name="Path 55437" d="M7.272,0a25.36,25.36,0,1,1-.939,50.712c-.144,0-6.745-6.159-6.311-26.843C-.114,3.568,7.255,0,7.272,0Z" transform="translate(593.251 348.947) rotate(117.975)" fill="#8686ec" opacity="0.76"/>
+      <ellipse id="Ellipse_500" data-name="Ellipse 500" cx="54.001" cy="11.53" rx="54.001" ry="11.53" transform="translate(521.395 313.383) rotate(25)" fill="#e5a3a3"/>
+      <path id="Path_55435" data-name="Path 55435" d="M7.273,0a25.365,25.365,0,1,1-.939,50.722c-.144,0-6.747-6.161-6.312-26.849C-.114,3.569,7.257,0,7.273,0Z" transform="matrix(0.438, -0.899, 0.899, 0.438, 542.597, 336.888)" fill="#8686ec" opacity="0.76"/>
+      <path id="Path_55438" data-name="Path 55438" d="M53.766,7.521C83.589,7.521,108-4.508,108,1.86S83.824,13.39,54,13.39,0,8.228,0,1.86,23.941,7.521,53.766,7.521Z" transform="translate(517.308 322.147) rotate(25)" fill="#ecc4c4"/>
+    </g>
+  </g>
+</svg>

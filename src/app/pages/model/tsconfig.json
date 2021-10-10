@@ -1,0 +1,174 @@
+{
+  "createdAt": "15/10/2021",
+  "fullname": "Đỗ Minh Đức",
+  "title": "Chuyên viên Phát triển phần mềm",
+  "room": "Phòng Kỹ thuật Công nghệ",
+  "avatar": "https://cdn.fakercloud.com/avatars/malykhinv_128.jpg",
+  "gender": "Nam",
+  "birtday": "12/12/1997",
+  "address": "14 Phú Diễn đường Hoàng Công Chất, P.Phú Diễn,Q.Bắc Từ Liêm,Tp.Hà Nội",
+  "phone": "0345780397",
+  "email": "ducdm21@viettel.com.vn",
+  "skill": [
+    {
+      "id": 1,
+      "name": "Python"
+    },
+    {
+      "id": 2,
+      "name": "Angular JS"
+    },
+    {
+      "id": 3,
+      "name": "UI/UX designer"
+    },
+    {
+      "id": 4,
+      "name": "Oracle"
+    },
+    {
+      "id": 5,
+      "name": "MySQL"
+    },
+    {
+      "id": 6,
+      "name": "MariaDB"
+    },
+    {
+      "id": 7,
+      "name": "PostgreSQL"
+    },
+    {
+      "id": 8,
+      "name": "Spring boot"
+    },
+    {
+      "id": 9,
+      "name": "Postman"
+    },
+    {
+      "id": 10,
+      "name": "Java"
+    },
+    {
+      "id": 11,
+      "name": "javascript"
+    },
+    {
+      "id": 12,
+      "name": "Nodejs"
+    }
+  ],
+  "project": [
+    {
+      "id": 1,
+      "title": "Quản lý trải nghiệm của nhân viên",
+      "desertion": "Là ứng dụng được xây dụng lên cho nội bộ bên bản lẻ Viettel phiên bản nâng cấp mang \n",
+      "date": "12/06/2020\n",
+      "technology": "ReactJS, Angular",
+      "progress": "Hoàn thành",
+      "task": "10",
+      "edu": "Middle lập trình backend",
+      "ms": 4
+    },
+    {
+      "id": 2,
+      "title": "Dự án My Viettel Store",
+      "desertion": "Là ứng dụng được xây dụng lên cho nội bộ bên bản lẻ Viettel phiên bản nâng cấp mang \n",
+      "date": "12/06/2020\n",
+      "technology": "ReactJS, Angular",
+      "progress": "Trong tiến trình",
+      "task": "10",
+      "edu": "Middle lập trình backend",
+      "ms": 4
+    },
+    {
+      "id": 2,
+      "title": "ERP Phân Phối",
+      "desertion": "Là ứng dụng được xây dụng lên cho nội bộ bên bản lẻ Viettel phiên bản nâng cấp mang \n",
+      "date": "12/06/2020\n",
+      "technology": "ReactJS, Angular",
+      "progress": "Chậm tiến độ",
+      "task": "10",
+      "edu": "Middle lập trình backend",
+      "ms": 4
+    }
+  ],
+  "specialize": {
+    "title": "Chuyên môn",
+    "icon": "assets/img/icons/em.png",
+    "lever": "Middle - Lập trình Backend",
+    "item": [
+      {
+        "id": 1,
+        "title": "Lập trình Backend",
+        "time": "08/2021",
+        "icon": "assets/img/icons/new/1.svg",
+        "leve": "Middle",
+        "skill": "Java, Spring Boot, MariaDB"
+      },
+      {
+        "id": 2,
+        "title": "Lập trình Web",
+        "time": "08/2021",
+        "icon": "assets/img/icons/new/1.svg",
+        "leve": "Junior",
+        "skill": "HTLM, CSS, React, Javascript"
+      }
+    ]
+  },
+  "jointproject": {
+    "title": "Dự án",
+    "icon": "assets/img/icons/project.png",
+    "lever": "Số lượng dự án đã tham gia: 03",
+    "item": [
+      {
+        "id": 1,
+        "title": "Ứng dụng VTMan",
+        "time": "08/2021",
+        "icon": "assets/img/icons/new/1.svg",
+        "leve": "Middle lập trình backend"
+      },
+      {
+        "id": 2,
+        "title": "Website ViettelStore.vn",
+        "time": "08/2021",
+        "icon": "assets/img/icons/new/1.svg",
+        "leve": "Junior - Lập trình Frontend"
+      }
+    ]
+  },
+  "overview": {
+    "title": "Đào tạo",
+    "item": [
+      {
+        "id": 1,
+        "title": "Tốt nghiệp công nghệ thông tin",
+        "icon": "assets/img/icons/new/1.svg",
+        "option": "Bằng khá",
+        "level": "Cử nhân",
+        "edu": "22/10/2021 - Arena, Hà Nội"
+      },
+      {
+        "id": 2,
+        "title": "Tốt nghiệp công nghệ thông tin",
+        "icon": "assets/img/icons/new/1.svg",
+        "option": "Bằng khá",
+        "level": "Cử nhân",
+        "edu": "22/10/2021 - Arena, Hà Nội"
+      },
+      {
+        "id": 3,
+        "title": "Tốt nghiệp công nghệ thông tin",
+        "icon": "assets/img/icons/new/1.svg",
+        "option": "Bằng khá",
+        "level": "Cử nhân",
+        "edu": "22/10/2021 - Arena, Hà Nội"
+      }
+    ]
+  },
+  "skillTap": ,
+  "routeTap": ,
+  "projectTap": ,
+  "id": 1
+}
