@@ -269,8 +269,8 @@ ul.tcb-pills.nav{
       padding-left: 0;
       .list-avatar-img{
         color: #fff;
-        background-image: url("assets/img/icons/bg-list.png");
-        background-size: cover;
+        background: linear-gradient(
+            300deg, #f5365c, #ff4081);
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -279,7 +279,7 @@ ul.tcb-pills.nav{
         height: 48px;
         width: 48px;
         img{
-          width: 100%;
+          width: 32px;
         }
       }
       span, small{
