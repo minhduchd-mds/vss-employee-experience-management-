@@ -242,7 +242,7 @@ export function chartOptions() {
       color: (mode) ? colors.gray[900] : colors.gray[300],
       drawBorder: false,
       drawTicks: false,
-      drawOnChartArea: (mode) ? false : true,
+      drawOnChartArea: (!mode),
       lineWidth: 2,
       zeroLineWidth: 0,
       zeroLineColor: (mode) ? colors.gray[900] : colors.gray[300],
@@ -375,6 +375,56 @@ export const chartExample2 = {
         data: [22, 12, 20, 22, 17, 29],
         maxBarThickness: 10
       }
+    ]
+  }
+};
+
+export const SoftSkillsRadar = {
+  options: {
+    scale: {
+      angleLines: {
+        display: false
+      },
+      ticks: {
+        suggestedMin: 5,
+        suggestedMax: 10
+      }
+    }
+  },
+  data: {
+    labels: ['Phản biện', 'Viết', 'Sáng tạo', 'Ứng xử', 'Thuyết phục', 'Làm việc nhóm'],
+    datasets: [{
+      data: [20, 10, 4, 40, 50, 70]
+    }]
+  }
+};
+export const HardSkillsRadar = {
+  options: {
+    scale: {
+      angleLines: {
+        display: false
+      },
+      ticks: {
+        suggestedMin: 5,
+        suggestedMax: 10
+      }
+    }
+  },
+  data: {
+    labels: ['Spring boot', 'React', 'Java', 'SQL', 'C#', 'C++'],
+    datasets: [{
+      label: 'My First Dataset',
+      data: [65, 59, 90, 81, 56, 55],
+      fill: true,
+      borderColor: 'rgb(255, 99, 132)',
+      pointBackgroundColor: 'rgb(255, 99, 132)',
+    }, {
+      label: 'My Second Dataset',
+      data: [28, 48, 40, 19, 96, 27],
+      fill: true,
+      borderColor: '#6610F2',
+      pointBackgroundColor: '#6610F2',
+    }
     ]
   }
 };

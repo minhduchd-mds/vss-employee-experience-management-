@@ -89,13 +89,25 @@
       </form>
       <!-- Navigation -->
       <ul class="navbar-nav">
-          <li *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item">
-              <a routerLinkActive="active" [routerLink]="[menuItem.path]" class="nav-link">
+          <li *ngFor="let menuItem of menuItems" class="nav-item ">
+              <a routerLinkActive="active" [routerLink]="[menuItem.path]" class="nav-link {{menuItem.class}}">
                   <i class="ni {{menuItem.icon}}"></i>
                   {{menuItem.title}}
+<!--                  <div class="{{menuItem.class}}"></div>-->
               </a>
+            <ng-container *ngIf="menuItem.children && menuItem.children.length > 0" class="Submenu">
+              <ul class="nav Submenu nav-sm flex-column">
+                <li routerLinkActive="active" *ngFor="let childmenu of menuItem.children" class="nav-item">
+                  <a class="nav-link" [routerLink]="[childmenu.path]">
+                    <p>{{childmenu.title}}</p>
+                  </a>
+                </li>
+              </ul>
+            </ng-container>
           </li>
       </ul>
+
+
       <!-- Divider -->
       <hr class="my-3">
       <!-- Heading -->

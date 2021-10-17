@@ -5,7 +5,8 @@ import {from} from 'rxjs';
 import {
   chartOptions,
   parseOptions,
-  chartExample1,
+  HardSkillsRadar,
+  SoftSkillsRadar,
   chartExample2
 } from '../../variables/charts';
 import {ApiServiceService} from '../service/api-service.service';
@@ -30,14 +31,33 @@ export class DashboardComponent implements OnInit {
   }
   ngOnInit() {
     const chartOrders = document.getElementById('chart-orders');
-
+    const SoftSkills = document.getElementById('chart-radar1');
+    const HardSkills = document.getElementById('chart-radar2');
+    const HardSkillsTab = document.getElementById('chart-radar3');
     parseOptions(Chart, chartOptions());
-
-    // tslint:disable-next-line:prefer-const
-    let ordersChart = new Chart(chartOrders, {
+    // tslint:disable-next-line:prefer-const no-unused-expression
+    new Chart(chartOrders, {
       type: 'bar',
       options: chartExample2.options,
       data: chartExample2.data
+    });
+    // tslint:disable-next-line:no-unused-expression
+    new Chart(SoftSkills, {
+      type: 'radar',
+      options: SoftSkillsRadar.options,
+      data: SoftSkillsRadar.data
+    });
+    // tslint:disable-next-line:no-unused-expression
+    new Chart(HardSkills, {
+      type: 'radar',
+      options: HardSkillsRadar.options,
+      data: HardSkillsRadar.data
+    });
+    // tslint:disable-next-line:no-unused-expression
+    new Chart(HardSkillsTab, {
+      type: 'radar',
+      options: HardSkillsRadar.options,
+      data: HardSkillsRadar.data
     });
   }
   getData() {

@@ -33,5 +33,17 @@
 </head>
 <body class="mat-typography">
   <app-root></app-root>
+ <script type="text/javascript">
+   window.onload = function() {
+     $('.submenu.active').on('click',function (e) {
+
+       $('.submenu.active').toggleClass('show');
+
+       $('.Submenu').slideToggle('slow');
+
+       e.preventDefault();
+     });
+   };
+ </script>
 </body>
 </html>
