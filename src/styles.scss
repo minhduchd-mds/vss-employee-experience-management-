@@ -99,6 +99,23 @@ ul.tcb-pills.nav{
     border-bottom: 4px solid #EE0033;
   }
 }
+.Submenu{
+  li{
+    a.active{
+      background: rgb(238 0 51 / 16%);
+      margin-left: 38px;
+      padding: 8px 48px 8px 23px !important;
+      width: 100%;
+      border-radius: 8px;
+
+      color: #EE0033 !important;
+    }:before{
+      border-left: initial !important;
+    }
+  }
+
+}
+
 .card{
   .card-header{
     padding: 24px 24px 0 !important;
@@ -291,3 +308,6 @@ ul.tcb-pills.nav{
 }
 /* Importing Bootstrap SCSS file. */
 @import "~bootstrap/scss/bootstrap";
+
+/* Importing Datepicker SCSS file. */
+@import "~ngx-bootstrap/datepicker/bs-datepicker";

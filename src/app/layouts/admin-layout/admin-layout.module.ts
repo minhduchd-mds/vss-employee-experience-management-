@@ -11,11 +11,13 @@ import { DashboardComponent } from '../../pages/dashboard/dashboard.component';
 import { MapsComponent } from '../../pages/maps/maps.component';
 import { UserProfileComponent } from '../../pages/user-profile/user-profile.component';
 import { TablesComponent } from '../../pages/tables/tables.component';
-import {MatTabsModule} from '@angular/material/tabs';
+// import {MatTabsModule} from '@angular/material/tabs';
 import {MatIconModule} from '@angular/material/icon';
 import {NavBasicComponent} from '../../components/tab/nav-basic.component';
 import {BrowserModule} from '@angular/platform-browser';
 import {Step} from '../../components/step/step';
+import { ProjectComponent } from '../../pages/project/project.component';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -24,16 +26,13 @@ import {Step} from '../../components/step/step';
     HttpClientModule,
     NgbModule,
     ClipboardModule,
-    MatTabsModule,
     MatIconModule
   ],
     declarations: [
         DashboardComponent,
-        UserProfileComponent,
-        TablesComponent,
-        MapsComponent,
         NavBasicComponent,
-        Step
+        Step,
+        ProjectComponent
     ],
   exports: [NavBasicComponent],
   bootstrap: [NavBasicComponent]

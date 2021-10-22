@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, NgZone, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-user-profile',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserProfileComponent implements OnInit {
 
-  constructor() { }
+  constructor(private ngZone: NgZone) { }
 
   ngOnInit() {
+    // Network.addListener("networkStatusChange", (status) => {
+    //   this.ngZone.run(() => {
+    //     // This code will run in Angular's execution context
+    //     this.networkStatus = status.connected ? "Online" : "Offline";
+    //   });
+    // });
   }
 
 }

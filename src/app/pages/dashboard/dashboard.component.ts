@@ -65,16 +65,5 @@ export class DashboardComponent implements OnInit {
       this.employee = val;
     });
   }
-  // tab
-  clickTabbar(tabbarType: number) {
-    try {
-      if (tabbarType) {
-        this.tabbarType = tabbarType;
-      }
-
-    } catch (error) {
-      console.log(error);
-    }
-  }
 
 }

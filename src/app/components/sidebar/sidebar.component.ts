@@ -5,6 +5,7 @@ class Submenu {
   path: string;
   title: string;
   icon: string;
+  class: string;
 }
 
 declare interface RouteInfo {
@@ -18,18 +19,18 @@ export const ROUTES: RouteInfo [] = [
     { path: '', title: 'Thông tin nhân sự',  icon: 'ni-single-02 text-pink', class: 'submenu',
       children: [
         {
-          path: '/dashboard', title: 'Sơ yếu lý lịch',  icon: 'ni-single-02 text-pink'
+          path: '/dashboard', title: 'Sơ yếu lý lịch',  icon: 'ni-single-02 text-pink', class: 'active'
         },
         {
-          path: '/dashboard', title: 'Kỹ năng',  icon: 'ni-single-02 text-pink'
+          path: '/', title: 'Kỹ năng',  icon: 'ni-single-02 text-pink', class: ''
         },
         {
-          path: '/dashboard', title: 'Dự án',  icon: 'ni-single-02 text-pink'
+          path: '/', title: 'Dự án',  icon: 'ni-single-02 text-pink', class: ''
         }
       ]
     },
     { path: '/management/user', title: 'Quản lý nhân sự',  icon: 'ni-user text-info', class: ''},
-    { path: '/management/project', title: 'Quản lý dự án',  icon: 'ni-project text-pink', class: ''}
+    { path: '/project', title: 'Quản lý dự án',  icon: 'ni-books text-pink', class: ''}
 ];
 @Component({
   selector: 'app-sidebar',
@@ -38,21 +39,18 @@ export const ROUTES: RouteInfo [] = [
 })
 export class SidebarComponent implements OnInit {
 
-  public menuItems: RouteInfo[];
+  public menuItems: any[];
   public isCollapsed = true;
-  public isCollapseds = false;
   constructor(private router: Router) { }
 
   ngOnInit() {
     this.menuItems = ROUTES.filter(menuItem => menuItem);
     this.router.events.subscribe((event) => {
-      this.isCollapsed = false;
-   });
+      this.isCollapsed = true;
+    });
+    // console.log(url));
   }
   isMobileMenu() {
-    if ( window.innerWidth > 991) {
-      return false;
-    }
-    return true;
+    return window.innerWidth <= 991;
   }
 }
