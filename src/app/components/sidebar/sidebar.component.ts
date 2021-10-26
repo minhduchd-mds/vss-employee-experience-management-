@@ -1,5 +1,5 @@
 import {Component, ModuleWithProviders, OnInit} from '@angular/core';
-import {Router, RouterModule} from '@angular/router';
+import {ActivatedRoute, NavigationEnd, NavigationStart, Router, RouterModule} from '@angular/router';
 
 class Submenu {
   path: string;
@@ -16,21 +16,21 @@ declare interface RouteInfo {
     children?: Submenu[];
 }
 export const ROUTES: RouteInfo [] = [
-    { path: '', title: 'Thông tin nhân sự',  icon: 'ni-single-02 text-pink', class: 'submenu',
+    { path: 'underlie', title: 'Thông tin nhân sự',  icon: 'ni-single-02 text-pink', class: 'submenu',
       children: [
         {
           path: '/dashboard', title: 'Sơ yếu lý lịch',  icon: 'ni-single-02 text-pink', class: 'active'
         },
         {
-          path: '/', title: 'Kỹ năng',  icon: 'ni-single-02 text-pink', class: ''
+          path: '/ds-skill', title: 'Kỹ năng',  icon: 'ni-single-02 text-pink', class: ''
         },
         {
           path: '/', title: 'Dự án',  icon: 'ni-single-02 text-pink', class: ''
         }
       ]
     },
-    { path: '/management/user', title: 'Quản lý nhân sự',  icon: 'ni-user text-info', class: ''},
-    { path: '/project', title: 'Quản lý dự án',  icon: 'ni-books text-pink', class: ''}
+  { path: '/user', title: 'Quản lý nhân sự',  icon: 'ni-books text-pink', class: ''},
+  { path: '/project', title: 'Quản lý dự án',  icon: 'ni-books text-pink', class: ''}
 ];
 @Component({
   selector: 'app-sidebar',
@@ -41,14 +41,16 @@ export class SidebarComponent implements OnInit {
 
   public menuItems: any[];
   public isCollapsed = true;
-  constructor(private router: Router) { }
+  constructor(private router: Router,  private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
     this.menuItems = ROUTES.filter(menuItem => menuItem);
+    // this.menuItems.menuItems = ROUTES.filter(menuItem => menuItem.children);
     this.router.events.subscribe((event) => {
       this.isCollapsed = true;
+      if (event instanceof NavigationStart) {
+      }
     });
-    // console.log(url));
   }
   isMobileMenu() {
     return window.innerWidth <= 991;

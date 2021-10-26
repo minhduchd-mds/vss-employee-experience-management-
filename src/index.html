@@ -35,9 +35,13 @@
   <app-root></app-root>
  <script type="text/javascript">
    window.onload = function() {
-     $('.submenu.active').on('click',function (e) {
+     const x = $('.nav-link').attr('href');
+     if(x === undefined){
+       // x.removeClass('active');
+     }
+     $('.submenu').on('click',function (e) {
 
-       $('.submenu.active').toggleClass('show');
+       $('.submenu').toggleClass('show');
 
        $('.Submenu').slideToggle('slow');
 

@@ -89,21 +89,21 @@
       </form>
       <!-- Navigation -->
       <ul class="navbar-nav">
-          <li *ngFor="let menuItem of menuItems" class="nav-item ">
+          <li *ngFor="let menuItem of menuItems" class="nav-item">
               <a routerLinkActive="active" [routerLink]="[menuItem.path]" class="nav-link {{menuItem.class}}">
                   <i class="ni {{menuItem.icon}}"></i>
                   {{menuItem.title}}
               </a>
+            <ng-container  class="Submenu">
+              <ul class="nav Submenu nav-sm">
+                <li *ngFor="let childmenu of menuItem.children"  class="nav-item">
+                  <a class="nav-link {{childmenu.class}}" [routerLink]="[childmenu.path]">
+                    {{childmenu.title}}
+                  </a>
+                </li>
+              </ul>
+            </ng-container>
           </li>
-        <ng-container  class="Submenu">
-          <ul class="nav Submenu nav-sm" *ngFor="let menuItem of menuItems">
-            <li *ngFor="let childmenu of menuItem.children"   class="nav-item ">
-              <a class="nav-link {{childmenu.class}}" [routerLink]="[childmenu.path]">
-                {{childmenu.title}}
-              </a>
-            </li>
-          </ul>
-        </ng-container>
       </ul>
 
 
