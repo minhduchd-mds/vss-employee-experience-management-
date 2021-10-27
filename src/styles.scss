@@ -59,6 +59,34 @@ body::-webkit-scrollbar-thumb
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
   background-color: #D62929;
 }
+// hiệu ứng icon
+.pulse-ring {
+  display: block;
+  border-radius: 40px;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  animation: animation-pulse 3.5s ease-out;
+  animation-iteration-count: infinite;
+  opacity: 0;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #968e7e;
+}
+// Hover scroll
+.hover-scroll {
+  position: relative;
+  overflow: hidden;
+  border-right: .4rem solid transparent;
+  border-bottom: .4rem solid transparent;
+  margin-right: -.4rem;
+  margin-bottom: -.4rem;
+}
+.hover-scroll:hover {
+  overflow: scroll;
+  border-right: 0;
+  border-bottom: 0;
+}
 .border-bg{
   border: 1px solid #F5F5F5 !important;
 }
@@ -170,30 +198,8 @@ ul.tcb-pills.nav{
   color: #677788;
   margin-bottom: 0;
 }
-.scroll-element .step{
-  height: 200px;
-  overflow: scroll;
-  overflow-x: hidden;
-}
-.step::-webkit-scrollbar
-{
-  width: 5px;
-  background-color: #F5F5F5;
-}
-.step::-webkit-scrollbar-track
-{
-  //-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-  background-color: #F5F5F5;
-}
-.step::-webkit-scrollbar-thumb
-{
-  border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-  background-color: #D62929;
-}
-
 .step {
-  position: relative;
+  height: 200px;
   list-style: none;
   display: -ms-flexbox;
   display: flex;

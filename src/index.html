@@ -36,12 +36,13 @@
  <script type="text/javascript">
    window.onload = function() {
      const x = $('.nav-link').attr('href');
+     const sub = $('.submenu');
      if(x === undefined){
        // x.removeClass('active');
      }
-     $('.submenu').on('click',function (e) {
+     sub.on('click',function (e) {
 
-       $('.submenu').toggleClass('show');
+       sub.toggleClass('show');
 
        $('.Submenu').slideToggle('slow');
 
