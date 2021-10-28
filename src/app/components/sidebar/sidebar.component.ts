@@ -16,7 +16,7 @@ declare interface RouteInfo {
     children?: Submenu[];
 }
 export const ROUTES: RouteInfo [] = [
-    { path: 'underlie', title: 'Thông tin nhân sự',  icon: 'ni-single-02 text-pink', class: 'submenu',
+    { path: 'underlie', title: 'Thông tin nhân sự',  icon: 'icon-profile text-pink', class: 'submenu',
       children: [
         {
           path: '/dashboard', title: 'Sơ yếu lý lịch',  icon: 'ni-single-02 text-pink', class: 'active'
@@ -29,8 +29,8 @@ export const ROUTES: RouteInfo [] = [
         }
       ]
     },
-  { path: '/user', title: 'Quản lý nhân sự',  icon: 'icon-user text-pink', class: ''},
-  { path: '/project', title: 'Quản lý dự án',  icon: 'icon-project text-pink', class: ''}
+  { path: '/user-m', title: 'Quản lý nhân sự',  icon: 'icon-user text-pink', class: ''},
+  { path: '/project', title: 'Quản lý dự án',  icon: 'icon-project  text-pink', class: ''}
 ];
 @Component({
   selector: 'app-sidebar',
