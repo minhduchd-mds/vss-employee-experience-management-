@@ -13,6 +13,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
+import { NewProjectComponent } from './pages/managerment/new-project/new-project.component';
 
 // @ts-ignore
 @NgModule({
@@ -29,7 +30,8 @@ import { CollapseModule } from 'ngx-bootstrap/collapse';
   declarations: [
     AppComponent,
     AdminLayoutComponent,
-    AuthLayoutComponent
+    AuthLayoutComponent,
+    NewProjectComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

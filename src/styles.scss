@@ -40,6 +40,19 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; color: #181
 .bcg-white{
   background-color:#fff !important;
 }
+.pr-24{
+  padding-right: 24px;
+}
+.h32{ height: 32px !important;}
+.pd-32{
+  border-radius: 8px;
+  border: 1px solid #E6E6E6;
+  padding: 7px 16px !important;
+  li{margin-right: 16px;}
+  li:last-child{
+    margin-right: 0;
+  }
+}
 .d-grid{
   display: grid;
 }
