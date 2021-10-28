@@ -87,6 +87,18 @@ body::-webkit-scrollbar-thumb
   border-right: 0;
   border-bottom: 0;
 }
+.icon-user{
+  background: url("assets/img/icons/icon_user.svg") no-repeat center center;
+  background-size: cover;
+  height: 24px;
+  width: 24px;
+}
+.icon-profile{
+  background: url("assets/img/icons/Icon_project.svg") no-repeat center center;
+  background-size: cover;
+  height: 24px;
+  width: 24px;
+}
 .border-bg{
   border: 1px solid #F5F5F5 !important;
 }

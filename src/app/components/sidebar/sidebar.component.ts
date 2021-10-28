@@ -29,8 +29,8 @@ export const ROUTES: RouteInfo [] = [
         }
       ]
     },
-  { path: '/user', title: 'Quản lý nhân sự',  icon: 'ni-books text-pink', class: ''},
-  { path: '/project', title: 'Quản lý dự án',  icon: 'ni-books text-pink', class: ''}
+  { path: '/user', title: 'Quản lý nhân sự',  icon: 'icon-user text-pink', class: ''},
+  { path: '/project', title: 'Quản lý dự án',  icon: 'icon-project text-pink', class: ''}
 ];
 @Component({
   selector: 'app-sidebar',
