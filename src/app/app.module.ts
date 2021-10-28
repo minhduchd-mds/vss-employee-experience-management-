@@ -14,6 +14,9 @@ import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { NewProjectComponent } from './pages/managerment/new-project/new-project.component';
+import { AddProductComponent } from './pages/managerment/add-product/add-product.component';
+import { SteperComponent } from './pages/managerment/steper/steper.component';
+import { FormProjectComponent } from './pages/managerment/form-project/form-project.component';
 
 // @ts-ignore
 @NgModule({
@@ -31,7 +34,10 @@ import { NewProjectComponent } from './pages/managerment/new-project/new-project
     AppComponent,
     AdminLayoutComponent,
     AuthLayoutComponent,
-    NewProjectComponent
+    NewProjectComponent,
+    AddProductComponent,
+    SteperComponent,
+    FormProjectComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -4,25 +4,25 @@
       <div class="card">
         <div class="card-header">
           <div class="row">
-            <div class="col-xl-5 col-12"><h3>Danh sách dự án</h3></div>
-            <div class="col-xl-7 col-12">
+            <div class="col-xl-4 col-lg-3 col-12"><h3 class="mb-0">Danh sách dự án</h3></div>
+            <div class="col-xl-8 col-lg-9 col-12">
               <div class="d-flex">
                 <form class="mr-2">
-                  <div class="input-group input-group-alternative h32">
+                  <div class="input-group input-group-alternative">
                     <div class="input-group-prepend">
                       <img src="assets/img/icons/find/search.svg" alt="" class="img-fluid">
                     </div>
                     <input class="form-control" placeholder="Tìm kiếm dự án" type="text">
                   </div>
                 </form>
-                <a href="#" class="pd-32 mr-2">
+                <a class="pd-32 mr-2 add"  routerLinkActive="active" [routerLink]="['/add-product']">
                   <img src="assets/img/icons/find/add.svg" alt="" class="img-fluid">
                   Thêm mới
                 </a>
-                <div class="h32 ">
+                <div class="h32">
                   <ul class="nav d-flex pd-32">
                     <li class="">
-                      <a href="#">
+                      <a routerLinkActive="active" [routerLink]="['/add-product']">
                         <img src="assets/img/icons/find/2.svg" class="img-fluid" alt="icon">
                       </a>
                     </li>

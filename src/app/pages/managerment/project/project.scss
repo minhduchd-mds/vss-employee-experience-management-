@@ -1,9 +1,27 @@
 .d-flex{
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
   form{
-    width: 58%;
+    width: 56%;
+    .input-group-alternative{
+      height: 36px;
+      box-shadow: initial;
+      border: 1px solid #E6E6E6;
+    }
     input{
-      padding:16px;
+      padding: 17px;
       height: 16px;
+    }
+    img{
+      margin-left: 16px;
+    }
+  }
+  .add{
+    padding: calc(.75rem + 1px) calc(1.5rem + 1px);
+    img{
+      flex-shrink: 0;
+      line-height: 0;
+      margin-right: .5rem;
     }
   }
 }
