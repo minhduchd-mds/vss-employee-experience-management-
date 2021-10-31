@@ -17,6 +17,9 @@ import { NewProjectComponent } from './pages/managerment/new-project/new-project
 import { AddProductComponent } from './pages/managerment/add-product/add-product.component';
 import { SteperComponent } from './pages/managerment/steper/steper.component';
 import { FormProjectComponent } from './pages/managerment/form-project/form-project.component';
+import { TabSkillComponent } from './pages/dashboard/tab-skill/tab-skill.component';
+import { TabWishComponent } from './pages/dashboard/tab-wish/tab-wish.component';
+import { TabProjectComponent } from './pages/dashboard/tab-project/tab-project.component';
 
 // @ts-ignore
 @NgModule({
@@ -37,7 +40,10 @@ import { FormProjectComponent } from './pages/managerment/form-project/form-proj
     NewProjectComponent,
     AddProductComponent,
     SteperComponent,
-    FormProjectComponent
+    FormProjectComponent,
+    TabSkillComponent,
+    TabWishComponent,
+    TabProjectComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
